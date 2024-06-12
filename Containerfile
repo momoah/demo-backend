@@ -1,4 +1,4 @@
-FROM node:14
+FROM nodejs:18-ubi8
 
 WORKDIR /app
 

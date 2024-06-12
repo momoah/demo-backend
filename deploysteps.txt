@@ -1,0 +1,2 @@
+oc new-app https://github.com/momoah/demo-backend.git --name=backend
+oc expose svc/backend

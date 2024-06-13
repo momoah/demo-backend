@@ -3,7 +3,8 @@ FROM registry.access.redhat.com/ubi8/nodejs-18:latest
 WORKDIR /usr/src/app
 
 COPY --chown=1001:1001 package*.json ./
-RUN npm install
+RUN cd /usr/src/app; \
+    npm install --save
 
 COPY --chown=1001:1001  . .
 
